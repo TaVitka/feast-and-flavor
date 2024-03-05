@@ -51,6 +51,14 @@ section {
   padding-top: var(--header-height);
 }
 
+.cards {
+  &__item {
+    padding: rem(24);
+    background-color: var(--color-milk-100);
+    border-radius: var(--radius-main);
+  }
+}
+
 #form-request {
   position: fixed;
   z-index: 10;
