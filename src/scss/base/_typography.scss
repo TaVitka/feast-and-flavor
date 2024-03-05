@@ -7,14 +7,14 @@ h3 {
   overflow: hidden;
   width: fit-content;
   font-family: var(--font-family-primary);
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--color-gray-700);
 }
 
 h1,
 h2 {
   font-size: clamp(32px, 2rem + 1vi, 48px);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.28rem;
 }
 
 h1 {

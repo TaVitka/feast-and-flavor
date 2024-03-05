@@ -29,11 +29,12 @@
 
   //  radius
   --radius-main: 32px;
+  --radius-background: 64px;
 
   // shadow
   --shadow-primary: 0px 8px 8px -4px #1118270A;
   --shadow-secondary: 0px 20px 24px -4px #1118271A;
 
   //gradient
-  --gradient-main: linear-gradient(90deg, rgba(241,241,241,0) 0%, rgba(241,241,241,0.87) 87%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
+  --gradient-main: linear-gradient(270deg, rgb(241 241 241 / 0%) 0%, rgb(241 241 241) 64%, #f1f1f1 100%, #f1f1f1 100%);
 }

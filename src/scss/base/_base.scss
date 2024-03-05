@@ -29,6 +29,10 @@ body {
   }
 }
 
+section {
+  padding: rem(88) 0;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
@@ -91,6 +95,6 @@ body {
     position: absolute;
     z-index: 1;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.48) 53.89%, rgba(0, 0, 0, 0) 74.96%);
+    background: var(--gradient-main);
   }
 }

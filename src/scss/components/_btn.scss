@@ -2,6 +2,7 @@
 @use "../utils/mixins"as*;
 
 .btn {
+  display: inline-block;
   padding: 22px 24px;
   border: 2px solid var(--color-milk-100);
   border-radius: var(--radius-main);
