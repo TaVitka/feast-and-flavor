@@ -26,6 +26,10 @@ h3 {
   font-weight: var(--fw-700);
 }
 
+h2 {
+  margin-bottom: rem(48);
+}
+
 h3 {
   font-size: clamp(20px, 1rem + 1vi, 24px);
 }

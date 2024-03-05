@@ -1,0 +1,39 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.about {
+
+  &__inner {
+    padding: rem(24);
+    min-height: 682px;
+    overflow: hidden;
+    border-radius: var(--radius-main);
+
+    @include cover-background();
+  }
+
+  &__box {
+    padding: rem(24);
+    background-color: var(--color-white);
+    border-radius: var(--radius-main);
+  }
+
+  h2 {
+    margin-bottom: rem(16);
+  }
+
+  p {
+    margin-bottom: rem(32);
+  }
+
+  &--home {
+    .about__box {
+      max-width: 489px;
+      width: 100%;
+    }
+
+    .btn {
+      min-width: 231px;
+    }
+  }
+}
