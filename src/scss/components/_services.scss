@@ -3,19 +3,6 @@
 
 .services {
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-
   &__wrapper {
     margin-bottom: rem(48);
   }

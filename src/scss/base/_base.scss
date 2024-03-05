@@ -52,7 +52,15 @@ section {
 }
 
 .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
     padding: rem(24);
     background-color: var(--color-milk-100);
     border-radius: var(--radius-main);
