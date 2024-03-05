@@ -1,34 +1,38 @@
 /* stylelint-disable alpha-value-notation */
 /* stylelint-disable color-function-notation */
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-  --content-width: 1180px;
+  --content-width: 1216px;
   --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // font-family
-  --font-family-primary: "Anek Malayalam", sans-serif;
-  --font-family-secondary: "Bakbak One", sans-serif;
+  --font-family-primary: "Inter", sans-serif;
 
   // font-weight
-  --fw-400: 400;
   --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
 
   // color
   --color-white: #fff;
   --color-black: #1c1c1c;
-  --color-dark-900: #1b1b1b;
-  --color-gray-400: #f6f7f8;
-  --color-gray-600: #a4a4a4;
-  --color-gray-650: #a2a2a2;
-  --color-gray-700: #4b4b4b;
-  --color-tile-800: #0c3c43;
+
+  --color-gray-700: #494949;
+  --color-gray-600: #727272;
+  --color-gray-500: rgba(73, 73, 73, 0.3);
+  --color-blue-400: #6DB4C1;
+  --color-milk-100: #F1F1F1;
 
   //  radius
-  --radius-main: 12px;
+  --radius-main: 32px;
 
   // shadow
   --shadow-primary: 0px 8px 8px -4px #1118270A;
   --shadow-secondary: 0px 20px 24px -4px #1118271A;
+
+  //gradient
+  --gradient-main: linear-gradient(90deg, rgba(241,241,241,0) 0%, rgba(241,241,241,0.87) 87%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
 }

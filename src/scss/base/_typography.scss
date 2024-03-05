@@ -4,37 +4,78 @@
 h1,
 h2,
 h3 {
-  --font-weight: 600;
-
   overflow: hidden;
   width: fit-content;
-  font-family: var(--font-family-secondary);
-  font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
-
-  @include media(mobile-m) {
-    line-height: 1.2;
-  }
-}
-
-a,
-button {
-  --font-weight: 400;
-
   font-family: var(--font-family-primary);
+  line-height: 1.2;
+  color: var(--color-gray-700);
 }
 
+h1,
 h2 {
-  font-size: clamp(40px, 2rem + 1vi, 56px);
-  text-transform: capitalize;
-  color: var(--color-tile-800);
+  font-size: clamp(32px, 2rem + 1vi, 48px);
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  font-weight: var(--fw-800);
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-700);
 }
 
 h3 {
-  font-size: clamp(32px, 2rem + 1vi, 40px);
-  text-transform: capitalize;
-  color: var(--color-tile-800);
+  font-size: clamp(20px, 1rem + 1vi, 24px);
+}
+
+input,
+label,
+summary,
+li,
+textarea,
+a,
+button,
+p {
+  font-family: var(--font-family-primary);
+}
+
+a,
+p,
+time,
+textarea,
+input {
+  font-weight: var(--fw-500);
+  line-height: 1.5;
+}
+
+a {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-gray-700);
+}
+
+.btn {
+  font-weight: var(--fw-600);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--color-gray-700);
+  text-align: center;
 }
 
 p {
+  font-size: clamp(18px, 1rem + 1vi, 20px);
+  color: var(--color-gray-600);
+}
+
+time {
+  color: var(--color-gray-600);
+  font-size: 14px;
+}
+
+input,
+textarea {
   font-size: 16px;
+  color: var(--color-gray-500);
 }
