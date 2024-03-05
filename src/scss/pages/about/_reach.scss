@@ -1,0 +1,33 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.reach {
+  padding: rem(67) 0 rem(82);
+
+  h2 {
+    margin: 0 auto rem(33);
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: none;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  @include media(tablet) {
+    padding: rem(50) 0;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+  }
+
+  @include media(mobile-l) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}

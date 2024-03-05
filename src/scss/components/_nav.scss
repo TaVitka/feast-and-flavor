@@ -1,0 +1,79 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    @include media(mobile-l) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow-y: auto;
+      padding-top: calc(var(--header-height) * 1.5);
+      width: 100%;
+      height: calc(var(--vh));
+      background-color: var(--color-white);
+      transform: translateX(150%);
+      transition-property: transform;
+      transition-duration: 0.4s;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    @include media(mobile-l) {
+      z-index: -1;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    &:not(:last-of-type, .footer .nav__item) {
+      margin-right: rem(40);
+
+      @include media(mobile-l) {
+        margin-right: 0;
+      }
+    }
+
+    @include media(mobile-l) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: var(--fw-500);
+    font-size: 20px;
+    color: var(--color-tile-800);
+
+    &.true {
+      border-bottom: 2px solid var(--color-tile-800);
+    }
+  }
+
+  .btn {
+    @include media(mobile-l) {
+      margin: 0 auto;
+    }
+  }
+
+  @include media(mobile-l) {
+    .logo {
+      max-width: 58px;
+    }
+  }
+}

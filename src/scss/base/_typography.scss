@@ -1,0 +1,40 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3 {
+  --font-weight: 600;
+
+  overflow: hidden;
+  width: fit-content;
+  font-family: var(--font-family-secondary);
+  font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
+
+  @include media(mobile-m) {
+    line-height: 1.2;
+  }
+}
+
+a,
+button {
+  --font-weight: 400;
+
+  font-family: var(--font-family-primary);
+}
+
+h2 {
+  font-size: clamp(40px, 2rem + 1vi, 56px);
+  text-transform: capitalize;
+  color: var(--color-tile-800);
+}
+
+h3 {
+  font-size: clamp(32px, 2rem + 1vi, 40px);
+  text-transform: capitalize;
+  color: var(--color-tile-800);
+}
+
+p {
+  font-size: 16px;
+}

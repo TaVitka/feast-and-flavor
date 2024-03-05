@@ -1,0 +1,68 @@
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="./images/logo.svg" alt="Elite Roof Works " width="90" height="68">
+      </a>
+
+      <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+
+      <div class="nav__inner">
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link {{ page === 'home' }}">
+              Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="services.html" class="nav__link {{ page === 'services' }}">
+              Services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="about.html" class="nav__link {{ page === 'about' }}">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link {{ page === 'contact' }}">
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <button class="btn request-btn" type="button">
+          Make A Request
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+
+  const startHeightValue = () => {
+    let vh = window.innerHeight * 1;
+    document.querySelector(':root').style.setProperty('--vh', `${vh}px`);
+
+    const pageHeader = document.querySelector('.header')
+
+    const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
+
+    document.documentElement.style.setProperty(
+      '--header-height',
+      `${headerHeight}px`
+    );
+  }
+
+  window.addEventListener('resize', startHeightValue);
+  window.addEventListener('scroll', startHeightValue);
+
+  startHeightValue();
+
+</script>
