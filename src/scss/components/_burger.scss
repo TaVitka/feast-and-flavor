@@ -58,7 +58,7 @@
     opacity: 1;
   }
 
-  @include media(mobile-l) {
+  @include media(tablet) {
     display: block;
   }
 }
