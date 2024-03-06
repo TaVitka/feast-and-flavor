@@ -13,7 +13,7 @@
 
   &--reverse,
   &:hover {
-    color:var(--color-white);
+    color: var(--color-white);
     background-color: var(--color-blue-400);
     border-color: var(--color-blue-400);
   }
@@ -42,6 +42,17 @@
 
       background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='48' height='48' rx='24' fill='white'/%3E%3Cpath d='M17.3071 28.8631L27.5582 18.6002H17.3032C16.5874 18.6002 16 18.0121 16 17.2955C16 16.5788 16.5782 16 17.294 16L30.6876 16C31.4035 16 31.9816 16.5788 31.9816 17.2955L32 30.7045C32 31.4212 31.4218 32 30.706 32C29.9902 32 29.412 31.4212 29.412 30.7045L29.3936 20.4378L19.1425 30.7006C18.6378 31.206 17.8118 31.206 17.3071 30.7006C16.8023 30.1953 16.8023 29.3684 17.3071 28.8631Z' fill='%236DB4C1'/%3E%3C/svg%3E%0A");
       @include cover-background();
+    }
+  }
+
+  &--send {
+    max-width: fit-content;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-gray-600);
+      border-color: var(--color-gray-600);
+      color: var(--color-milk-100)
     }
   }
 }
