@@ -22,4 +22,29 @@
     text-transform: capitalize;
     margin-bottom: 8px;
   }
+
+  &__desc {
+    margin-bottom: rem(24);
+  }
+
+  &__list {
+    padding-left: rem(20);
+  }
+
+  &__list-item {
+    display: list-item;
+    padding-left: rem(10);
+    list-style: disc;
+    color: var(--color-gray-600);
+
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &--list {
+    .services__wrapper {
+      margin-bottom: 0;
+    }
+  }
 }
