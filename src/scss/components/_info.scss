@@ -1,0 +1,14 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.info {
+  padding: 0 0 rem(88);
+
+  &__title {
+    margin-bottom: rem(24);
+  }
+
+  h3 {
+    margin-bottom: 8px;
+  }
+}

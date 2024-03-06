@@ -14,6 +14,7 @@ h1,
 h2 {
   font-size: clamp(32px, 2rem + 1vi, 48px);
   letter-spacing: 0.28rem;
+  text-transform: capitalize;
 }
 
 h1 {

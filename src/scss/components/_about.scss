@@ -13,6 +13,8 @@
   }
 
   &__box {
+    max-width: 572px;
+    width: 100%;
     padding: rem(24);
     background-color: var(--color-white);
     border-radius: var(--radius-main);
@@ -23,17 +25,30 @@
   }
 
   p {
+    &:not(:last-of-type) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__text {
     margin-bottom: rem(32);
   }
 
   &--home {
     .about__box {
       max-width: 489px;
-      width: 100%;
     }
 
     .btn {
       min-width: 231px;
+    }
+  }
+
+  &--mission {
+    padding: rem(88) 0 rem(113);
+
+    .about__inner {
+      margin-bottom: rem(24);
     }
   }
 }

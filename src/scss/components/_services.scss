@@ -3,6 +3,10 @@
 
 .services {
 
+  &__item {
+    justify-content: space-between;
+  }
+
   &__wrapper {
     margin-bottom: rem(48);
   }

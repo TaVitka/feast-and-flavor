@@ -20,12 +20,29 @@
 
   &__content {
     z-index: 1;
-    padding-inline:  calc(rem(112) - var(--container-offset)) 0;
-    max-width: 730px;
+    padding-inline: rem(112) 0;
+    max-width: 630px;
     width: 100%;
   }
 
   h1 {
-    margin-bottom: 32px;
+    margin-bottom: rem(32);
+  }
+
+  &__desc {
+    color: var(--color-blue-400);
+    margin-bottom: rem(24);
+  }
+
+  &--home {
+    .hero__content {
+      max-width: 710px;
+    }
+  }
+
+  &--about {
+    h1 {
+      margin-bottom: rem(24);
+    }
   }
 }
