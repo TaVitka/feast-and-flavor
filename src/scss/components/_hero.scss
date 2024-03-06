@@ -20,7 +20,7 @@
 
   &__content {
     z-index: 1;
-    padding-inline: rem(112) 0;
+    margin-inline: rem(112) 0;
     max-width: 630px;
     width: 100%;
   }
@@ -30,6 +30,7 @@
   }
 
   &__desc {
+    width: 85%;
     color: var(--color-blue-400);
     margin-bottom: rem(24);
   }

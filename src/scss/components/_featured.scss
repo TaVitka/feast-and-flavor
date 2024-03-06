@@ -33,6 +33,10 @@
     .featured__grid {
       flex-direction: row-reverse;
     }
+
+    .featured__content {
+      max-width: 556px;
+    }
   }
 
   &--history {
@@ -44,6 +48,9 @@
   &--approach {
     .featured__img {
       min-height: 446px;
+    }
+    p {
+      width: 86%;
     }
   }
 }
