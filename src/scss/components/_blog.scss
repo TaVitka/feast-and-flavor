@@ -49,6 +49,13 @@
     }
   }
 
+  &__name {
+    font-size: clamp(34px, 2rem + 1vi, 40px);
+    letter-spacing: 0;
+    color: var(--color-blue-400);
+    margin-bottom: rem(24);
+  }
+
   &--all {
     .blog__recent {
       display: grid;
@@ -82,6 +89,39 @@
 
     p {
       margin-bottom: 0;
+    }
+  }
+
+  &--single {
+    max-width: 882px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: rem(44);
+
+    h1 {
+      margin-bottom: rem(48);
+    }
+
+    time {
+      margin-bottom: rem(32);
+      font-size: clamp(18px, 1rem + 1vi, 20px);
+    }
+
+    p {
+      margin-bottom: rem(24);
+    }
+
+    b {
+      font-weight: var(--fw-700);
+    }
+
+    img {
+      max-height: 375px;
+      border-radius: var(--radius-main);
+
+      &:not(:last-of-type) {
+        margin-bottom: rem(88);
+      }
     }
   }
 }
