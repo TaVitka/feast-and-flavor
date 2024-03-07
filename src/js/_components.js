@@ -1,5 +1,6 @@
 import './components/_burger';
 import './components/_slider';
+import './components/_tabs';
 
 document.querySelectorAll('.request-btn').forEach(btn => {
   btn.addEventListener('click', () => {
