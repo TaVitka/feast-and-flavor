@@ -2,27 +2,40 @@
 @use "../utils/mixins"as*;
 
 .policy {
-  padding: rem(30) 0;
-  line-height: 1.5;
-  color: var(--color-black);
-
-  &__inner {
-    max-width: 680px;
+  h1 {
+    margin-bottom: rem(48);
+    text-transform: capitalize;
   }
 
-  h1 {
-    position: relative;
-    margin: 0 auto rem(32);
-    font-size: clamp(32px, 1.6176rem + 1.3vi, 56px);
-    color: var(--color-tile-800);
+  h1 + p:not(:last-child) {
+    margin-bottom: rem(64);
   }
 
   h2 {
-    font-family: var(--font-family-primary);
-    font-weight: var(--fw-500);
+    margin-bottom: 10px;
+    font-weight: var(--fw-600);
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+
+  p,
+  a,
+  li {
     font-size: 20px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    line-height: 1.25;
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--color-blue-400);
   }
 
   ul {
@@ -33,24 +46,9 @@
 
   li {
     list-style-type: disc;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
 
     &:not(:last-child) {
-      margin-bottom: 3px;
+      margin-bottom: 6px;
     }
-  }
-
-  p {
-    font-size: 20px;
-
-    &:not(:last-child) {
-      margin-bottom: rem(25);
-    }
-  }
-
-  a {
-    text-decoration: underline;
-    color: var(--color-tile-800);
   }
 }
