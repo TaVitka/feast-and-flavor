@@ -41,9 +41,16 @@
     }
   }
 
-  &--about {
+  &--about,
+  &--menu{
     h1 {
       margin-bottom: rem(24);
+    }
+  }
+
+  &--menu {
+    p {
+      width: 97%;
     }
   }
 }
