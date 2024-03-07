@@ -1,6 +1,6 @@
 import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from 'swiper';
 
-const swiperSpecials = new Swiper('.special__slider', {
+let options = {
   slidesPerView: 1,
   speed: 700,
   effect: 'fade',
@@ -12,11 +12,19 @@ const swiperSpecials = new Swiper('.special__slider', {
   draggable: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.special__slider .swiper-button-next',
-    prevEl: '.special__slider .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
     clickable: true,
-    el: '.special__slider .swiper-pagination',
+    el: '.swiper-pagination',
   },
-});
+}
+
+const swiperSpecials = new Swiper('.special__slider1', options);
+const gallery1 = new Swiper('.gallery__slider1', options);
+const gallery2 = new Swiper('.gallery__slider2', options);
+const gallery3 = new Swiper('.gallery__slider3', options);
+const gallery4 = new Swiper('.gallery__slider4', options);
+
+const highlights = new Swiper('.highlights', options);

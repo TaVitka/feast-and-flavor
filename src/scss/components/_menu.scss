@@ -9,6 +9,7 @@
     margin-bottom: rem(48);
 
     a {
+      display: block;
       padding: rem(16) rem(24);
       font-size: clamp(1px, 1rem + 1vi, 20px);
       line-height: 1.25;
@@ -170,11 +171,17 @@
     height: 96px;
   }
 
+  &__single {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: rem(24);
+    margin-bottom: rem(48);
+  }
+
   .btn {
     width: 100%;
   }
-
-
 
   &--all {
     .menu__main,
@@ -211,6 +218,23 @@
 
     .menu__thumb-item {
       max-width: 395px;
+    }
+  }
+
+  &--gallery {
+    .menu__main-title {
+      font-size: clamp(20px, 2rem + 1vi, 24px);
+      letter-spacing: 0.05rem;
+    }
+
+    .menu__main-img {
+      min-height: 357px;
+    }
+
+    .btn {
+      display: block;
+      max-width: 493px;
+      margin: 0 auto;
     }
   }
 }

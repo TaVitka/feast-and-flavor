@@ -2,16 +2,20 @@
 @use "../../utils/mixins/"as*;
 
 .contacts {
+  h2 {
+    margin-bottom: rem(32);
+  }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: rem(24);
+    gap: 0 rem(24);
   }
 
   &__link {
     position: relative;
+    display: block;
     padding-block: 14px;
     padding-inline: 86px 5px;
     font-weight: var(--fw-500);
