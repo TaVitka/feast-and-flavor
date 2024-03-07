@@ -55,6 +55,36 @@
       color: var(--color-milk-100)
     }
   }
+
+  &--absolute {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      transform: scale(1);
+      transition: transform 0.4s ease-in-out;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9606 31.2946L29.3372 15.9003H13.9548C12.881 15.9003 12 15.0182 12 13.9432C12 12.8683 12.8673 12 13.941 12L34.0315 12C35.1052 12 35.9725 12.8683 35.9725 13.9432L36 34.0568C36 35.1317 35.1327 36 34.059 36C32.9852 36 32.118 35.1317 32.118 34.0568L32.0904 18.6566L16.7138 34.051C15.9567 34.809 14.7177 34.809 13.9606 34.051C13.2034 33.293 13.2034 32.0526 13.9606 31.2946Z' fill='%236DB4C1'/%3E%3C/svg%3E%0A");
+
+      @include cover-background();
+    }
+
+    &:hover::before {
+      transform: scale(1.2);
+    }
+  }
 }
 
 *[class].swiper {
