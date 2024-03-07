@@ -4,6 +4,8 @@
 .request {
   $root: &;
   background-color: var(--color-milk-100);
+  border-top-left-radius: var(--radius-background);
+  border-top-right-radius: var(--radius-background);
 
   &__inner {
     display: flex;

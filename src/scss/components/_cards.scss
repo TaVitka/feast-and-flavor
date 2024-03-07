@@ -67,4 +67,12 @@
   &--four {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  &--two {
+    grid-template-columns: repeat(2, 1fr);
+
+    .cards__item {
+      padding-block: rem(24) rem(44);
+    }
+  }
 }
