@@ -15,6 +15,10 @@ h2 {
   font-size: clamp(32px, 2rem + 1vi, 48px);
   letter-spacing: 0.28rem;
   text-transform: capitalize;
+
+  @include media(mobile-l) {
+    letter-spacing: 0.10rem;
+  }
 }
 
 h1 {

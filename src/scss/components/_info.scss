@@ -11,4 +11,8 @@
   h3 {
     margin-bottom: 8px;
   }
+
+  @include media(tablet) {
+    padding: 0 0 rem(44);
+  }
 }

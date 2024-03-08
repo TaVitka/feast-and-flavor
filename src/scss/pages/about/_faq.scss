@@ -46,4 +46,17 @@
     line-height: 1.3;
     cursor: pointer;
   }
+
+  @include media(mobile-l) {
+    details {
+      padding-right: 44px;
+
+      &::before {
+        transform: translateY(0);
+        rotate: 180deg;
+        top: rem(34);
+        right: 12px;
+      }
+    }
+  }
 }

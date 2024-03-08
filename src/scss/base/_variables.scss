@@ -42,4 +42,7 @@
   //gradient
   --gradient-main: linear-gradient(270deg, rgb(241 241 241 / 0%) 0%, rgb(241 241 241) 64%, #f1f1f1 100%, #f1f1f1 100%);
   --gradient-intense: linear-gradient(270deg, rgb(241 241 241 / 50%) 0%, #f1f1f1 35%, #f1f1f1 100%, #f1f1f1 100%);
+  --gradient-medium: linear-gradient(270deg, #f1f1f100 -10%, #f1f1f1 50%, #f1f1f1 100%, #f1f1f1 100%);
+  --gradient-rightM: linear-gradient(-270deg, #f1f1f100 -40%, #f1f1f1 50%, #f1f1f1 100%, #f1f1f1 100%);
+  --gradient-rightL: linear-gradient(-270deg, #f1f1f100 -55%, #f1f1f1 30%, #f1f1f1 100%, #f1f1f1 100%);
 }
