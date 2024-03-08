@@ -16,7 +16,7 @@ h2 {
   letter-spacing: 0.28rem;
   text-transform: capitalize;
 
-  @include media(mobile-l) {
+  @include media(tablet) {
     letter-spacing: 0.10rem;
   }
 }

@@ -7,6 +7,10 @@
     justify-content: space-between;
   }
 
+  .btn {
+    align-self: flex-end;
+  }
+
   &__wrapper {
     margin-bottom: rem(48);
   }
@@ -55,6 +59,10 @@
       align-items: center;
       justify-items: center;
       text-align: center;
+    }
+
+    &__list {
+      text-align: left;
     }
   }
 }

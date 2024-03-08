@@ -82,6 +82,14 @@
 
     .cards__item {
       padding-block: rem(24) rem(44);
+      grid-auto-rows: max-content;
+    }
+
+    @include media(tablet) {
+      .cards__item:last-of-type {
+        grid-column: auto;
+        width: 100%;
+      }
     }
   }
 
