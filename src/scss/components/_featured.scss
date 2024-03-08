@@ -42,6 +42,7 @@
   }
 
   &__items {
+    max-width: 596px;
     display: grid;
     grid-auto-rows: 1fr;
     align-items: stretch;

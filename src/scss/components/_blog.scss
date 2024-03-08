@@ -6,7 +6,7 @@
   &__desc {
     margin-bottom: rem(24);
     font-size: clamp(24px, 2rem + 1vi, 32px);
-    line-height: 1.35;
+    line-height: 1.2;
     font-weight: var(--fw-700);
     letter-spacing: 0.17rem;
     color: var(--color-gray-700);
@@ -60,6 +60,7 @@
     .blog__recent {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
       gap: 24px;
     }
 
@@ -67,8 +68,9 @@
       position: relative;
       flex-direction: column;
       gap: rem(24);
+      min-height: 634px;
       margin-bottom: 0;
-      padding-bottom: rem(95);
+      padding-bottom: rem(76);
     }
 
     img {
@@ -84,10 +86,14 @@
     }
 
     h3 {
+      font-size: clamp(20px, 1rem + 1vi, 24px);
+      letter-spacing: 0;
       margin-bottom: 8px;
     }
 
     p {
+      font-size: 16px;
+      line-height: 1.15;
       margin-bottom: 0;
     }
   }
@@ -118,10 +124,7 @@
     img {
       max-height: 375px;
       border-radius: var(--radius-main);
-
-      &:not(:last-of-type) {
-        margin-bottom: rem(88);
-      }
+      margin-bottom: rem(88);
     }
   }
 }
