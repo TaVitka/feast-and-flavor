@@ -85,6 +85,17 @@
       transform: scale(1.2);
     }
   }
+
+  @include media(mobile-l) {
+    &--arrow {
+      padding-right: 56px;
+
+      &::before {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
 }
 
 *[class].swiper {

@@ -55,4 +55,32 @@
   h2 {
     margin-bottom: rem(12);
   }
+
+  @include media(tablet-wide) {
+    &__inner {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include media(tablet-wide) {
+    border-top-left-radius: var(--radius-main);
+    border-top-right-radius: var(--radius-main);
+  }
+
+  @include media(mobile-m) {
+    &__form,
+    input,
+    textarea {
+      border-radius: var(--radius-small);
+    }
+
+    &__form {
+      padding: 24px 16px;
+    }
+
+  }
 }

@@ -42,7 +42,7 @@
   }
 
   &--about,
-  &--menu{
+  &--menu {
     h1 {
       margin-bottom: rem(24);
     }
@@ -51,6 +51,40 @@
   &--menu {
     p {
       width: 97%;
+    }
+  }
+
+  @include media(tablet) {
+
+    &__inner {
+      background-size: cover;
+      min-height: auto;
+      border-bottom-left-radius: var(--radius-main);
+      border-bottom-right-radius: var(--radius-main);
+    }
+
+    &__content {
+      width: 60%;
+      margin-left: rem(44);
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      padding: rem(88) 0;
+    }
+
+    &__content {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0  20px;
+    }
+
+    &--about,
+    &--menu {
+      .hero__inner {
+        padding: rem(44) 0;
+      }
     }
   }
 }

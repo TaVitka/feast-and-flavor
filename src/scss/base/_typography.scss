@@ -28,10 +28,14 @@ h3 {
 
 h2 {
   margin-bottom: rem(48);
+
+  @include media(mobile-l) {
+    margin-bottom: rem(30);
+  }
 }
 
 h3 {
-  font-size: clamp(20px, 1rem + 1vi, 24px);
+  font-size: 24px;
 }
 
 input,
@@ -69,7 +73,7 @@ a {
 }
 
 p {
-  font-size: clamp(18px, 1rem + 1vi, 20px);
+  font-size: clamp(18px, 0.5rem + 1vi, 20px);
   color: var(--color-gray-600);
 }
 

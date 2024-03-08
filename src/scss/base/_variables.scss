@@ -32,6 +32,7 @@
   --radius-main: 32px;
   --radius-background: 64px;
   --radius-medium: 24px;
+  --radius-small: 12px;
   --radius-round: 50%;
 
   // shadow
@@ -40,4 +41,5 @@
 
   //gradient
   --gradient-main: linear-gradient(270deg, rgb(241 241 241 / 0%) 0%, rgb(241 241 241) 64%, #f1f1f1 100%, #f1f1f1 100%);
+  --gradient-intense: linear-gradient(270deg, rgb(241 241 241 / 50%) 0%, #f1f1f1 35%, #f1f1f1 100%, #f1f1f1 100%);
 }

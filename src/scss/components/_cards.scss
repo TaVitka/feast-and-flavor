@@ -7,8 +7,8 @@
   gap: 24px;
 
   &__item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     overflow: hidden;
     padding: rem(24);
     background-color: var(--color-milk-100);
@@ -75,4 +75,32 @@
       padding-block: rem(24) rem(44);
     }
   }
+
+  @include media(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__item {
+      max-width: 456px;
+      width: 100%;
+
+      &:last-of-type {
+        justify-self: center;
+        grid-column: 1/4;
+        width: 48%;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__item {
+      &:last-of-type {
+        grid-column: auto;
+        width: 100%;
+      }
+    }
+  }
+
 }

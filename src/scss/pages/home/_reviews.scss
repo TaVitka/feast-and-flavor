@@ -17,6 +17,20 @@
   h3 {
     font-size: 20px;
     line-height: 1.1;
-    text-align: right;
+  }
+
+  .cards {
+    h3 {
+      align-self: end;
+      justify-self: end;
+    }
+  }
+
+  @include media(mobile-l) {
+    .cards {
+      h3 {
+        justify-self: start;
+      }
+    }
   }
 }

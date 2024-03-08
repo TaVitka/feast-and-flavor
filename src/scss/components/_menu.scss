@@ -72,7 +72,7 @@
   &__main-title,
   &__thumb-chapter {
     margin-bottom: 8px;
-    font-size: clamp(26px, 2rem + 1vi, 32px);
+    font-size: clamp(26px, 1.5rem + 1vi, 32px);
     font-weight: var(--fw-700);
     line-height: 1.1;
     letter-spacing: 0.17rem;
@@ -125,6 +125,7 @@
   &__thumb-chapter {
     margin-bottom: 16px;
   }
+
   &__thumb-items {
     margin-bottom: rem(48);
   }
@@ -235,6 +236,105 @@
       display: block;
       max-width: 493px;
       margin: 0 auto;
+    }
+  }
+
+  @include media(tablet) {
+
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0 14px;
+    }
+    &__main {
+      grid-column: 1/3;
+    }
+
+    &__wrapper,
+    &__thumb {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 0;
+    }
+
+    &__main-img {
+      border-radius: var(--radius-medium);
+    }
+
+    &__thumb-item {
+      flex-direction: column;
+      align-items: center;
+      gap: rem(10);
+      padding: 16px;
+      border-radius: var(--radius-medium);
+    }
+
+    &__thumb-img {
+      max-width: 100%;
+      margin: 0;
+      border-radius: inherit;
+    }
+
+    &__thumb-desc {
+      display: none;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__thumb-item {
+      gap: 0;
+    }
+
+    &__thumb-img {
+      min-height: 100px;
+    }
+
+    &__thumb-title {
+      display: none;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    &__wrapper {
+      grid-row: 1;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    &__thumb {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    &__thumb-item {
+      padding: 12px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include media(mobile-s) {
+    &__main-img,
+    &__thumb-item {
+      border-radius: var(--radius-small);
+
+      &.selected {
+        filter: brightness(0.95);
+      }
+    }
+
+    &__thumb-img {
+      min-height: 76px;
     }
   }
 }

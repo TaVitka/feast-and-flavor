@@ -47,4 +47,14 @@
       margin-bottom: 0;
     }
   }
+
+
+  @include media(tablet) {
+    &__wrapper {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+  }
 }

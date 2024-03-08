@@ -51,4 +51,33 @@
       margin-bottom: rem(24);
     }
   }
+
+  @include media(tablet) {
+    &__inner {
+      min-height: auto;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      background-size: 75%;
+      background-position: 100% 0;
+      padding: rem(88) 12px 12px 12px;
+    }
+
+    &__box {
+      box-shadow: var(--shadow-secondary);
+    }
+
+    .btn {
+      min-width: 100%;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__inner {
+      background-size: 85%;
+      padding-top: rem(100);
+    }
+  }
 }
