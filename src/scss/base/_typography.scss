@@ -68,7 +68,7 @@ a {
   color: var(--color-gray-700);
 }
 
-.btn {
+*[class].btn {
   font-weight: var(--fw-600);
   font-size: 18px;
   line-height: 1;

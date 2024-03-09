@@ -41,14 +41,14 @@
   ul {
     margin-bottom: 30px;
     padding-left: 15px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   li {
     list-style-type: disc;
 
     &:not(:last-child) {
-      margin-bottom: 6px;
+      margin-bottom: 12px;
     }
   }
 }

@@ -12,7 +12,7 @@ tabButtons?.forEach((tab, index) => {
   }
 });
 
-tabsContainer?.addEventListener('click', e => {
+tabsList?.addEventListener('click', e => {
   const clickedTab = e.target.closest('a');
   const allTabs = tabsContainer.querySelectorAll('a');
 

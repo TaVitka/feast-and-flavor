@@ -1,8 +1,9 @@
 @use "../utils/functions/"as*;
 @use "../utils/mixins"as*;
 
-.btn {
+*[class].btn {
   display: inline-block;
+  margin: 0;
   padding: 22px 24px;
   border: 2px solid var(--color-milk-100);
   border-radius: var(--radius-main);
