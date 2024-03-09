@@ -5,7 +5,7 @@
         <img class="logo__img" src="./images/logo.svg" alt="Feast and Flavor" width="236" height="36">
       </a>
 
-      <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+      <button class="burger" aria-label="Mobile menu" type="button"><span></span></button>
 
       <div class="nav__inner">
 
@@ -69,15 +69,15 @@
     let vh = window.innerHeight * 1;
     document.querySelector(':root').style.setProperty('--vh', `${vh}px`);
 
-    const pageHeader = document.querySelector('.header')
+    const pageHeader = document.querySelector('.header');
 
     const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
 
     document.documentElement.style.setProperty(
       '--header-height',
-      `${headerHeight}px`
+      `${headerHeight}px`,
     );
-  }
+  };
 
   window.addEventListener('resize', startHeightValue);
   window.addEventListener('scroll', startHeightValue);
