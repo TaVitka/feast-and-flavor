@@ -130,7 +130,7 @@
       padding-bottom: rem(24);
 
       .swiper-button-prev {
-        transform: translateX(50%);
+        transform: translateX(50%) translateY(-50%);
         left: 50%;
       }
 
@@ -139,6 +139,22 @@
         bottom: -8px;
         transform: translateX(calc(-50% + 25%));
         left: 50%;
+      }
+    }
+  }
+
+  @include media(tablet-wide) {
+    .highlights {
+      padding: 0 84px;
+    }
+
+    &--highlights {
+      .swiper-wrapper .swiper-button-prev {
+        left: calc(-84px - 32px);
+      }
+
+      .swiper-wrapper .swiper-button-next {
+        right: -84px;
       }
     }
   }
@@ -169,15 +185,25 @@
       letter-spacing: 0.07rem;
     }
 
+    &__subtitle {
+      font-size: 20px;
+    }
+
     &__item {
       box-shadow: var(--shadow-secondary);
+      font-weight: 600;
     }
 
     &--history,
-    &--approach {
+    &--approach,
+    &--hero {
       .featured__img {
         min-height: auto;
       }
+    }
+
+    &--hero {
+      padding-top: 0;
     }
 
     &--reverse {
@@ -206,6 +232,18 @@
         font-weight: var(--fw-600);
       }
     }
+
+    &--highlights {
+      .featured__grid {
+        background: none;
+      }
+
+      .featured__content {
+        background-color: var(--color-milk-100);
+        border-radius: var(--radius-main);
+        padding: rem(24);
+      }
+    }
   }
 
   @include media(mobile-l) {
@@ -228,7 +266,12 @@
     &--num {
       .featured__grid {
         flex-direction: column;
-        background: none;
+      }
+    }
+
+    &--highlights {
+      .swiper-wrapper .swiper-button-prev {
+        left: calc(-84px - 24px);
       }
     }
   }
@@ -240,12 +283,44 @@
         padding-block: rem(80) rem(20);
       }
     }
+
+    .highlights {
+      padding: 0;
+    }
+
+    &--highlights {
+
+      .swiper-slide {
+        visibility: hidden;
+
+        &.swiper-slide-active {
+          visibility: visible;
+        }
+      }
+
+      .swiper-wrapper {
+        padding-bottom: 68px;
+      }
+
+      .swiper-wrapper .swiper-button {
+        top: unset;
+        bottom: 0;
+        transform: translate(0);
+      }
+      .swiper-wrapper .swiper-button-prev {
+        left: 0
+      }
+
+      .swiper-wrapper .swiper-button-next {
+        right: 0
+      }
+    }
   }
 
   @include media(mobile-s) {
     &--reverse {
       .featured__content {
-        width: 80%;
+        width: 76%;
       }
 
       p {

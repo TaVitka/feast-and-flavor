@@ -7,6 +7,10 @@
   align-items: center;
   justify-content: space-between;
 
+  img {
+    height: auto;
+  }
+
   .logo {
     max-width: 236px;
     width: 100%;
@@ -55,6 +59,9 @@
     &:not(:last-of-type) {
       margin-right: rem(32);
 
+      @include media(tablet-wide) {
+        margin-right: rem(24);
+      }
       @include media(tablet) {
         margin-right: 0;
       }

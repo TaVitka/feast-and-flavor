@@ -59,10 +59,14 @@
       padding-block: rem(100);
       padding-inline: rem(90);
     }
-
   }
 
   @include media(mobile-l) {
+    &__title,
+    &__desc {
+      width: 100%;
+    }
+
     &__item {
       padding-inline: rem(70);
     }
@@ -76,6 +80,10 @@
     &__item {
       padding-block: rem(60);
       padding-inline: rem(10);
+    }
+
+    &__img {
+      max-height: 350px;
     }
 
     h3 {
