@@ -18,6 +18,8 @@
   }
 
   &__item {
+    @include cover-background();
+
     display: flex;
     align-items: center;
     min-height: 682px;
@@ -28,8 +30,6 @@
     &.swiper-slide-active {
       visibility: visible;
     }
-
-    @include cover-background();
   }
 
   &__content {

@@ -32,13 +32,13 @@
   }
 
   &__img {
+    @include cover-background();
+
     background-position: 100% 0;
     align-self: stretch;
     max-width: 596px;
     width: 100%;
     border-radius: var(--radius-main);
-
-    @include cover-background();
   }
 
   &__items {

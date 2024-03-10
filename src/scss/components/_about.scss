@@ -2,14 +2,13 @@
 @use "../utils/mixins/"as*;
 
 .about {
-
   &__inner {
+    @include cover-background();
+
     padding: rem(24);
     min-height: 682px;
     overflow: hidden;
     border-radius: var(--radius-main);
-
-    @include cover-background();
   }
 
   &__box {
@@ -69,7 +68,6 @@
   @include media(mobile-l) {
     &__inner {
       position: relative;
-      background-size: 75%;
       background-position: 100% 0;
       padding: rem(88) 12px 12px 12px;
 
